@@ -113,7 +113,7 @@ Clinical + visual explanation
   `akiec, bcc, bkl, df, mel, nv, vasc, other`
 
 ### ⚙️ Training Configuration
-##```python
+##python
 BATCH_SIZE = 32
 TOTAL_EPOCHS = 15
 NUM_CLASSES = 8
@@ -123,6 +123,8 @@ Optimized for medical sensitivity
 Class imbalance handled
 
 Fine-tuned on dermoscopic features
+
+---
 
 ###🧠 Large Language Model (LLM)
 
@@ -140,6 +142,8 @@ Patient-friendly reporting
 
 Role: Converts raw predictions into actionable insights
 
+---
+
 ###🛡️ Evaluation & Guardrails
 ✅ Two-Key Hybrid Verification
 
@@ -152,6 +156,8 @@ Patient-reported symptoms
 Example:
 Vision says “Benign” but symptom = bleeding → Risk elevated
 
+---
+
 ###🚫 Hallucination Mitigation
 
 LLM is restricted to:
@@ -161,6 +167,7 @@ Vision output
 User-provided symptoms
 
 No invented medical history
+---
 
 ###🚑 Urgency Guardrails
 
@@ -171,6 +178,7 @@ Visual alerts
 “Locate Doctor” CTA
 
 Encourages immediate professional consultation
+---
 
 ###⚠️ Known Limitations
 
@@ -179,6 +187,7 @@ Reduced accuracy with poor lighting or blurry images
 Not a substitute for biopsy or dermatologist diagnosis
 
 Requires internet for API access
+---
 
 ###🚀 Setup & Run
 Prerequisites
@@ -204,6 +213,8 @@ npm run dev
 
 
 Open 👉 http://localhost:3000
+
+---
 
 ###🧑‍💻 Team
 
