@@ -113,7 +113,7 @@ Clinical + visual explanation
   `akiec, bcc, bkl, df, mel, nv, vasc, other`
 
 ### ⚙️ Training Configuration
-```python
+##```python
 BATCH_SIZE = 32
 TOTAL_EPOCHS = 15
 NUM_CLASSES = 8
@@ -124,7 +124,7 @@ Class imbalance handled
 
 Fine-tuned on dermoscopic features
 
-🧠 Large Language Model (LLM)
+###🧠 Large Language Model (LLM)
 
 Engine: Google Gemini 2.5 (Free Tier via AI Studio)
 
@@ -140,7 +140,7 @@ Patient-friendly reporting
 
 Role: Converts raw predictions into actionable insights
 
-🛡️ Evaluation & Guardrails
+###🛡️ Evaluation & Guardrails
 ✅ Two-Key Hybrid Verification
 
 The system cross-checks:
@@ -152,7 +152,7 @@ Patient-reported symptoms
 Example:
 Vision says “Benign” but symptom = bleeding → Risk elevated
 
-🚫 Hallucination Mitigation
+###🚫 Hallucination Mitigation
 
 LLM is restricted to:
 
@@ -162,7 +162,7 @@ User-provided symptoms
 
 No invented medical history
 
-🚑 Urgency Guardrails
+###🚑 Urgency Guardrails
 
 High-risk outputs trigger:
 
@@ -172,7 +172,7 @@ Visual alerts
 
 Encourages immediate professional consultation
 
-⚠️ Known Limitations
+###⚠️ Known Limitations
 
 Reduced accuracy with poor lighting or blurry images
 
@@ -180,32 +180,32 @@ Not a substitute for biopsy or dermatologist diagnosis
 
 Requires internet for API access
 
-🚀 Setup & Run
+###🚀 Setup & Run
 Prerequisites
 
 Node.js v18+
 
-Clone Repository
+##Clone Repository
 git clone https://github.com/yashbhure009/DermaVision09.git
 cd DermaVision09
 
-Install Dependencies
+##Install Dependencies
 npm install
 npm install @gradio/client react-webcam
 
-Environment Setup
+##Environment Setup
 
 Create .env.local:
 
 GEMINI_API_KEY=your_api_key_here
 
-Run Application
+##Run Application
 npm run dev
 
 
 Open 👉 http://localhost:3000
 
-🧑‍💻 Team
+###🧑‍💻 Team
 
 Yash Bhure — 9823010260 — bhureyash444@gmail.com
 Yash Adhav — 9921365808 — yash15272426@gmail.com
